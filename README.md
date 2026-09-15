@@ -71,11 +71,11 @@ Copy-Item .env.example .env
 Điền **một** key provider vào `.env`, sau đó chạy bản gốc trước khi sửa artifact:
 
 ```powershell
-python scripts/preflight_provider.py --provider openrouter
-python run_eval.py --provider openrouter --version v0 --suite base --eval-cases data/eval_base.json
+python scripts/preflight_provider.py --provider gemini
+python run_eval.py --provider gemini --version v0 --suite base --eval-cases data/eval_base.json
 ```
 
-Thay `openrouter` bằng `openai`, `anthropic` hoặc `gemini` khi dùng provider khác. Không commit `.env`.
+Thay `gemini` bằng `openrouter`, `openai`, `anthropic` khi dùng provider khác. Không commit `.env`.
 
 ## Tài liệu cần đọc
 
